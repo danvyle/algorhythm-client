@@ -56,7 +56,7 @@ class User extends React.Component {
 
   handleLogout = () => {
     localStorage.clear()
-    window.open('https://algorhythm-nation-front.herokuapp.com/', "_parent")
+    window.open('https://algorhythmn-nation-front.herokuapp.com/', "_parent")
   }
 
   handleAddSong = uri => {
