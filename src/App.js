@@ -10,6 +10,13 @@ import ErrorMsg from './components/ErrorMsg'
 
 import SavedPlaylists from './containers/SavedPlaylists'
 
+var StatsD = require('node-dogstatsd').StatsD;
+var dogstatsd = new StatsD();
+
+// # Increment a counter.
+dogstatsd.increment('page.views')
+
+
 class App extends React.Component {
 
   constructor(props) {
